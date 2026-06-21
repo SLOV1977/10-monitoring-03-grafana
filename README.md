@@ -793,7 +793,6 @@ node_filesystem_free_bytes{mountpoint="/"}
       "uid": "EBwEPyaDk",
       "version": 30
     }
-    ```
   </p>
 </details>
 
