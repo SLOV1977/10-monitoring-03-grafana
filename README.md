@@ -47,7 +47,7 @@
 
 Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
-Promql-запросы:  
+### Promql-запросы:  
 
 1. Утилизация CPU для nodeexporter (в процентах, 100-idle):  
 
@@ -108,11 +108,6 @@ node_filesystem_free_bytes{mountpoint="/"}
 <details>
   <summary>Dashboard_Node_Status.json</summary>
   <p>
-    Здесь может быть любой текст, списки, заголовки, таблицы или даже блоки кода.
-    Например:
-    ```python
-    print("Привет, мир!")
-    ```
     ```
     {
       "annotations": {
