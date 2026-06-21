@@ -108,7 +108,7 @@ node_filesystem_free_bytes{mountpoint="/"}
 <details>
   <summary>Dashboard_Node_Status.json</summary>
   <p>
-    ```
+    ```json
     {
       "annotations": {
         "list": [
