@@ -35,8 +35,8 @@
 Изучите самостоятельно ресурсы:
 
 1. [PromQL tutorial for beginners and humans](https://valyala.medium.com/promql-tutorial-for-beginners-9ab455142085).
-1. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
-1. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
+2. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
+3. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
 
 Создайте Dashboard и в ней создайте Panels:
 
@@ -50,32 +50,26 @@
 ### Promql-запросы:  
 
 1. Утилизация CPU для nodeexporter (в процентах, 100-idle):  
-
 ```
 100 - (avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 ```
 
 2. CPULA 1/5/15:
-
 ```
 node_load1
 ```
-
 ```
 node_load5
 ```
-
 ```
 node_load15
 ```
 3. Количество свободной оперативной памяти:  
-
 ```
 node_memory_MemFree_bytes + node_memory_Buffers_bytes + node_memory_Cached_bytes
 ```
 
-4. Количество места на файловой системе:  
-
+4. Количество свободного места на файловой системе:  
 ```
 node_filesystem_free_bytes{mountpoint="/"}
 ```
